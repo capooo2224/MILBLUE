@@ -1,0 +1,143 @@
+/*Meet the Team Start*/
+.ourteam
+{
+    background-color: #EEC373;
+    padding-top: 5%;
+}
+
+.team-section
+{
+    min-height: 100vh;
+    width: 90%;
+    background-color: #5C3D2E;
+    margin: auto;
+    border: 10px double #3b1808;
+}
+
+.container 
+{
+    padding: 2% 1%;
+    width: 100%;
+    height: 100%;
+    background-color: #F4DFBA;
+}
+
+.section-title
+{
+    width: 100%;
+    height: 12%;
+    margin: 0 0 2% 0;
+}
+
+.section-title h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    color: #3b1808;
+    font-family: CP_bold;
+}
+
+.section-title h2 span{
+    color: #dba746;
+    font-family: CP_bold;
+}
+
+.row
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.team-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2% 0;
+    height: 350px;
+    width: 100%;
+    gap: 1%;
+}
+
+.item
+{
+    width: 24%;
+    height: 300px;
+    padding: 0.5%;
+    text-align: center;
+    border: 3px solid #3b1808;
+    background-color: #EEC373;
+    transition: all 0.5s;
+    
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+}
+
+
+.itempic{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #3b1808;
+    background-color: #5C3D2E;
+}
+
+.item img, .itema img
+{
+    width: 100%;
+    height: 90%;
+}
+
+.item:hover, .itema:hover
+{
+    transform: translateY(-5%);
+}
+
+.inner 
+{
+    width: 95%;
+    height: 100px;
+    background-color: #3b1808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin: auto;
+    transform: translateY(-40px);
+    border: 3px solid #3b1808;
+    transition: all 0.5s;
+    box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
+}
+
+.item:hover .inner, .itema:hover .inner
+{
+    transform: translateY(-60px);
+}
+
+.info{
+    width: 96%;
+    height: 90%;
+    border: solid 3px white;
+    padding: 2%;
+}
+
+.info h5
+{
+    font-size: 15px;
+    color: #dba746;
+}
+
+.info h4
+{
+    font-size: 18.5px;
+    font-family: CP_bold;
+    color: #fff;
+
+}
+
+.info p
+{
+    font-size: 13px;
+    font-weight: bolder;
+    color: #F4DFBA;
+}
+/*Meet the Team End*
