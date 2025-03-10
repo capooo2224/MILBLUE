@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My New Website</title>
-    <link rel="stylesheet" href="About Us.css" />
+    <link rel="stylesheet" href="About Us.css"/>
+    <link rel="icon" href="favicon_io/FaviconB.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
 <style>
 
@@ -21,165 +22,221 @@
         box-sizing: border-box;
         height: 37px;
       }
-      body h1 {
+      header h1 {
         margin: 0;
-        margin-left: 10px;
-        font-size: 16px;
+        font-size: 18px;
         font-family: Konkhmer Sleokchher;
       }
-      body h1 a {
+      header h1 a {
         color: white; /* Set the link color to white */
         text-decoration: none; /* Remove underline from link */
       }
       nav ul {
         list-style: none;
         margin: 0;
-        margin-right: 10px;
         padding: 0;
         display: flex;
         font-family: Konkhmer Sleokchher;
+        font-size: 18px;
       }
       nav ul li {
-        margin-left: 20px;
         margin-top: -20px;
       }
       nav ul li a {
         color: white;
         text-decoration: none;
       }
+      .Group-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8.5rem;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .Group-info img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+      }
+      .Group-info-text p {
+        padding: 20px;
+        max-width: 500px;
+        text-align: center;
+        justify-items: center;
+        margin-top: 20px;
+
+
+      }
+      .photo-container {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 2rem;
+}
+.photo-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .photo-container {
+        grid-template-columns: 1fr;
+    }
+    .photo-container img {
+        max-width: 100%;
+    }
+}
+.separator {
+    width: 25%;
+    height: 5px;
+    background-color: #ffffff; /* Change color as needed */
+    margin: 2rem 0; /* Adjust spacing as needed */
+}
+    .about-section {
+    margin-top: 2rem;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensure the section takes the full width */
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(0.93); /* Adjust the scale to fit the members */
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    gap: 20px;
+}
+.team-member p {
+    font-size: small;
+    margin-top: 10px;
+}
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.team-member .role {
+    font-style: italic;
+    font-size: x-small;}
+
+        .about-container .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1 1 calc(50% - 20px); /* Adjust the width of each member */
+            max-width: calc(50% - 20px); /* Adjust the width of each member */
+        }
+        .about-container .team-member:nth-child(3) {
+            flex: 1 1 calc(33.333% - 20px); /* Adjust the width of the third member */
+            max-width: calc(33.333% - 20px); /* Adjust the width of the third member */
+        }
+        .about-container .team-member:nth-child(4),
+        .about-container .team-member:nth-child(5) {
+            flex: 1 1 calc(33.333% - 20px); /* Adjust the width of the fourth and fifth members */
+            max-width: calc(33.333% - 20px); /* Adjust the width of the fourth and fifth members */
+        }
+        .about-container .team-member img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .about-container .team-member h3 {
+            margin: 10px 0 5px;
+        }
+        .about-container .team-member p {
+            margin: 0;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .about-container .team-member {
+                flex: 1 1 calc(50% - 20px); /* Adjust the width for smaller screens */
+                max-width: calc(50% - 20px); /* Adjust the width for smaller screens */
+    }
+}
       </style>
 </head>
 <header>
-    <h1><a href="https://www.example.com">BLUE 2</a></h1>
+    <h1><a href="https://www.example.com" class="btn">BLUE 2</a></h1>
     <div class="title">
-        <h1>Gen Rock</h1>
+        <h1>BLUE 2</h1>
       </div>
     <nav>
         <div>
             <img>
         </div>
         <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Index.html">Documentary</a></li>
-            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Home.html" class="btn">Home</a></li>
+            <li><a href="index.html" class="btn">Documentary</a></li>
+            <li><a href="About Us.html" class="btn">About Us</a></li>
         </ul>
     </nav>
 </header>
-<body><!--MEET THE TEAM START-->
-  <section class="ourteam">
-      <div class="team-section">
-          <div class="container">
-  
-                  <div class="section-title">
-                      <h2>Meet <span>Our Team</span></h2>
-                  </div>
-  
-              <div class="row">
-                  <div class="team-items">
-                      <div class="item">
-                          <div class="itempic">
-                              <img src="pic/chibi/Zoe.png" alt="member1">
-                          </div>
-  
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>AP-Student</h5>
-                                  <h4>Zoe Madison Blanco</h4>
-                                  <p>Facilitator/Producer</p>
-                              </div>
-                          </div>
-                      </div>
-  
-                      <div class="item">
-                          <div class="itempic">
-                              <img src="pic/chibi/Maine.png" alt="member2">
-                          </div>
-  
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>AP-Student</h5>
-                                  <h4>Jermaine Antonio</h4>
-                                  <p>Scribe/Animator</p>
-                              </div>
-                          </div>
-                      </div>
-  
-                      <div class="item">
-                          <div class="itempic">
-                              <img src="pic/chibi/Hannah.png" alt="member3">
-                          </div>
-  
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>AP-Student</h5>
-                                  <h4>Hanna Sophia Banico</h4>
-                                  <p>Scribe/Production Asst.</p>
-                              </div>
-                          </div>
-                      </div>
-  
-                      <div class="item">
-                          <div class="itempic">
-                              <img src="pic/chibi/Kaye.png" alt="member4">
-                          </div>
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>AP-Student</h5>
-                                  <h4>Kaye Charmel Atienza</h4>
-                                  <p>Scribe/Cinematographer</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="row">
-                  <div class="team-items">
-                      <div class="item">
-                          <div class="itempic">
-                              <img src="pic/chibi/Jewel.png" alt="member5">
-                          </div>
-  
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>AP-Student</h5>
-                                  <h4>Jewel Heart Basinillo</h4>
-                                  <p>Scribe/Programmer</p>
-                              </div>
-                          </div>
-                      </div>
-  
-                      <div class="item">
-                          <div class="itempic">
-                              <img src="pic/chibi/Rafael.png" alt="member6">
-                          </div>
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>AP-Student</h5>
-                                  <h4>Rafael Lawrence Villafuerte </h4>
-                                  <p>Spokerperson/Editor</p>
-                              </div>
-                          </div>
-                      </div>
-  
-                      <div class="item">
-                          <div class="itempic">
-                              <img src="pic/chibi/Yves.png" alt="member7">
-                          </div>
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>AP-Student</h5>
-                                  <h4>Yves Calma</h4>
-                                  <p>Scribe/Sound Mixer</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-  
-          </div>
+<body>
+
+  <div class="Group-info">
+    <img src="TEAM_PIC.JPG" alt="Group Picture">
+    <div class="Group-info-text">
+      <p>Blue 2 is small but resourceful(?) group of students from APEC Schools Bacoor - Senior High department that were tasked to create multimedia content for their third quarter subject, Media Information Literacy </p> 
+    </div>
+    <div class="separator"></div>
+    <div class="photo-container">
+      <img src="Pic1.JPG" alt="Photo 1">
+      <img src="Pic2.JPG" alt="Photo 2">
+      <img src="pic3.JPG" alt="Photo 3">
+      <img src="pic4.JPG" alt="Photo 4">
+  </div>
+  <div class="separator"></div>
+  </div>
+  <div class="about-section">
+    <h2>About Us</h2>
+    <p>Meet the team behind BLUE 2.</p>
+  </div>
+<div class="about-container">
+  <div class="team-member">
+      <img src="4.png" alt="Member 1">
+      <h3>Adriel Drew Ebina</h3>
+      <div class= "role">
+        <p>Role: Project Manager, Interviewer</p>
       </div>
-  </section>
-  <!--MEET THE TEAM END-->
+      <p>Description: Responsible for overseeing the project and ensuring <br>timely delivery.</p>
+  </div>
+  <div class="team-member">
+      <img src="2.png" alt="Member 2">
+      <h3>Jewel Heart Basinillo </h3>
+      <div class= "role">
+        <p>Role: Camerawoman, Editor</p>
+      </div>
+      <p>Description: Captures the footage and edits the video for <br>the documentary.</p>
+  </div>
+  <div class="team-member">
+      <img src="5.png" alt="Member 3">
+      <h3>Axel Andrew Laurio</h3>
+      <div class= "role">
+        <p>Role: Visual artist</p>
+      </div>
+      <p>Description: Creates the visual elements and ensures a great user experience.</p>
+  </div>
+  <div class="team-member">
+      <img src="Ferds.png" alt="Member 4">
+      <h3>Ferdinand Mark Dahonog</h3>
+      <div class= "role">
+        <p>Role: Interviewer </p>
+      </div>
+      <p>Description: Conducted interviews and gathered information for the documentary.</p>
+  </div>
+  <div class="team-member">
+      <img src="3.png" alt="Member 5">
+      <h3>Weiam Aspiras</h3>
+      <div class= "role">
+      <p>Role:lead developer </p>
+      </div>
+      <p>Description:In charge of the development team and coding the main features.</p>
+  </div>
+</div>
 </body>
+    
 </html>
